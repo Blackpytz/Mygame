@@ -68,7 +68,6 @@ game_active = False
 start_time = 0
 score = 0
 
-
 sky_surface = pygame.image.load('Runner_graphics/Sky.png').convert()
 ground_surface = pygame.image.load('Runner_graphics/ground.png').convert()
 
