@@ -72,9 +72,6 @@ score = 0
 sky_surface = pygame.image.load('Runner_graphics/Sky.png').convert()
 ground_surface = pygame.image.load('Runner_graphics/ground.png').convert()
 
-# score_surf = test_font.render('My game', False, (64,64,64))
-# score_rect = score_surf.get_rect(center = (400, 50))
-
 # Snail
 snail_frame_1 = pygame.image.load('Runner_graphics/Snail/snail1.png').convert_alpha()
 snail_frame_2 = pygame.image.load('Runner_graphics/Snail/snail2.png').convert_alpha()
@@ -91,6 +88,7 @@ fly_surf = fly_frame[fly_frame_index]
 
 obstacle_rect_list = []
 
+# Player
 player_walk_1 = pygame.image.load('Runner_graphics/Player/player_walk_1.png').convert_alpha()
 player_walk_2 = pygame.image.load('Runner_graphics/Player/player_walk_2.png').convert_alpha()
 player_walk = [player_walk_1, player_walk_2]
