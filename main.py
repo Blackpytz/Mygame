@@ -2,6 +2,9 @@ import pygame
 from sys import exit
 from random import randint
 
+class Player(pygame.sprite.Sprite):
+    
+
 def display_score():
     current_time = int(pygame.time.get_ticks() / 1000) - start_time
     score_surf = test_font.render(f'Score: {current_time}', False, (64, 64, 64))
@@ -66,7 +69,7 @@ clock = pygame.time.Clock()
 test_font = pygame.font.Font('Runner_fonts/pixeltype.ttf', 50)
 game_active = False
 start_time = 0
-score = 0
+score = 0 
 
 sky_surface = pygame.image.load('Runner_graphics/Sky.png').convert()
 ground_surface = pygame.image.load('Runner_graphics/ground.png').convert()
@@ -110,7 +113,7 @@ pygame.time.set_timer(obstacle_timer, 1500)
 snail_animation_timer = pygame.USEREVENT + 2
 pygame.time.set_timer(snail_animation_timer, 500)
 
-fly_animation_timer = pygame.USEREVENT + 2
+fly_animation_timer = pygame.USEREVENT + 3
 pygame.time.set_timer(fly_animation_timer, 200)
 
 while True:
