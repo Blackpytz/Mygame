@@ -171,7 +171,7 @@ while True:
     else:
         screen.fill((94, 129, 162))
         screen.blit(player_stand, player_stand_rect)
-
+        
         add_game_title()
         if score == 0:
             add_game_instruct()
